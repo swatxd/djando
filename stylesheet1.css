@@ -1,0 +1,94 @@
+/* Importing a clean, cinematic sans-serif font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Oswald:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Deep cinematic black gradient */
+    background: radial-gradient(circle, #1a1a1a 0%, #0a0a0a 100%);
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h2 {
+    /* Bold, wide-spaced cinematic header */
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+    color: #e0e0e0;
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 3rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); /* Modern frosted glass effect */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 350px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+input {
+    background: #111;
+    border: 1px solid #333;
+    padding: 12px 15px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+input:focus {
+    border-color: #ffd700; /* Gold cinematic accent */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+}
+
+button {
+    background: #ffd700;
+    color: #000;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    background: #ffea70;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#result {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}

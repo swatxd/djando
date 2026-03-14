@@ -1,0 +1,69 @@
+*{
+    margin-left: 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#box1{
+    height: 200px;
+    width: 200px;
+    border-top-right-radius: 30%;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 1000%;
+    border-bottom-right-radius: 30%;
+    background-color: rgb(255, 0, 0);
+}
+
+#box1:hover{
+    background-color: rgb(0, 0, 0);
+    height: 210px;
+    width: 210px;
+}
+
+#box2{
+    height: 200px;
+    width: 200px;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    background-color: rgb(38, 0, 255);
+}
+#box2:hover{
+    background-color: rgb(0, 0, 0);
+    height: 210px;
+    width: 210px;
+}
+
+#box3{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background-color: rgb(0, 255, 38);
+}
+#box3:hover{
+    background-color: rgb(0, 0, 0);
+    height: 210px;
+    width: 210px;
+}
+
+.car {
+
+    font-size: 50px;
+    position: absolute;
+    top: 1000px;
+    left: 500px;
+    offset-path: path('M 300 60 L 700 60 A 190 190 0 0 1 700 440 L 300 440 A 190 190 0 0 1 300 60 Z');
+    animation: drive 6s linear infinite;
+    scale: 0.5;
+  }
+
+
+  @keyframes drive {
+    0% { offset-distance: 0%; }
+    100% { offset-distance: 100%; }
+  }
+
+.background{
+    position: static;
+    scale: 0.5;
+
+}
